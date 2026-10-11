@@ -94,6 +94,46 @@ export default function TravellerPage() {
       .catch(console.error);
   }, []);
 
+  // Listen for copilot trip commands and auto-booking requests
+  useEffect(() => {
+    const handleCopilotTrip = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      const data = customEvent.detail;
+      if (data?.constraints) {
+        setConstraints(data.constraints);
+        searchRoutes(data.constraints);
+      }
+    };
+
+    const handleCopilotBook = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      const { itineraryId } = customEvent.detail || {};
+      if (itineraryId) {
+        const target = feasibleRoutes.find((f) => f.itinerary.id === itineraryId)?.itinerary;
+        if (target) {
+          setCandidateBookingItinerary(target);
+          setShowManualBooking(true);
+        } else {
+          setTimeout(() => {
+            const retryTarget = feasibleRoutes.find((f) => f.itinerary.id === itineraryId)?.itinerary;
+            if (retryTarget) {
+              setCandidateBookingItinerary(retryTarget);
+              setShowManualBooking(true);
+            }
+          }, 600);
+        }
+      }
+    };
+
+    window.addEventListener('prayanam_copilot_trip', handleCopilotTrip);
+    window.addEventListener('prayanam_copilot_book', handleCopilotBook);
+
+    return () => {
+      window.removeEventListener('prayanam_copilot_trip', handleCopilotTrip);
+      window.removeEventListener('prayanam_copilot_book', handleCopilotBook);
+    };
+  }, [feasibleRoutes]);
+
   const searchRoutes = async (currentConstraints: TripConstraints) => {
     setLoading(true);
     try {
