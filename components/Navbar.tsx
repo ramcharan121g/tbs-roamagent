@@ -125,12 +125,6 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
                 </span>
               </div>
             </Link>
-
-            {/* Persistent Pill - Demo Mode / Simulated Data */}
-            <div className="hidden md:flex items-center space-x-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-emerald-950/60 border border-emerald-700/50 text-emerald-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span>{t.demoPill}</span>
-            </div>
           </div>
 
           {/* Desktop Navigation */}

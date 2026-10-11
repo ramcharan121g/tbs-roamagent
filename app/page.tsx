@@ -37,11 +37,6 @@ export default function LandingPage() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
         {/* Hero Section */}
         <div className="text-center space-y-6 max-w-3xl mx-auto pt-6">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-600/50 text-emerald-300 text-xs font-mono shadow-[0_0_15px_rgba(16,185,129,0.15)]">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            <span>Autonomous Intercity Transit Concierge · Andhra Pradesh & South India</span>
-          </div>
-
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
             Prayanam
           </h1>
