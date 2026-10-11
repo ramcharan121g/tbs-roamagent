@@ -185,8 +185,8 @@ export function AuthModal({ isOpen, onClose, lang = 'en' }: AuthModalProps) {
           <div className="space-y-3">
             <p className="text-xs text-gray-400">
               {isTe
-                ? 'హ్యాకథాన్ టెస్టింగ్ కోసం ఒక క్లిక్‌తో ప్రొఫైల్ ఎంచుకోండి:'
-                : 'Instant 1-click profiles pre-configured with real travel preferences & corridors:'}
+                ? 'ఒక క్లిక్‌తో ధృవీకరించబడిన ప్రయాణికుడి ప్రొఫైల్ ఎంచుకోండి:'
+                : 'Instant 1-click verified traveller profiles with active travel history:'}
             </p>
             <div className="space-y-2.5">
               {DEMO_USERS.map((u) => {

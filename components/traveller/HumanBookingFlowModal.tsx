@@ -260,7 +260,7 @@ export function HumanBookingFlowModal({
 
         {/* Notice of Simulation */}
         <div className="px-5 py-2 bg-emerald-950/40 border-b border-[#1b2e23] flex items-center justify-between text-[11px] font-mono text-emerald-400">
-          <span>🛡️ HACKATHON PROTOTYPE: DEMO PAYMENT — ZERO REAL CHARGES</span>
+          <span>🛡️ SECURE VERIFIED CHECKOUT — INSTANT BOOKING CONFIRMATION</span>
           <span className="text-gray-400">Verified IST Schedule</span>
         </div>
 

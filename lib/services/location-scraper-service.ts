@@ -433,7 +433,7 @@ export class LocationScraperService {
 
     const res = await fetch(url, {
       headers: {
-        'User-Agent': 'Prayanam-Scraper/1.0 (hackathon-prototype; contact: support@prayanam.in)',
+        'User-Agent': 'Prayanam-Scraper/1.0 (transit-routing-client; contact: support@prayanam.in)',
         Accept: 'application/json',
       },
       signal: controller.signal,
