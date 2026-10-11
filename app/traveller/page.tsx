@@ -74,13 +74,25 @@ export default function TravellerPage() {
   const [recoveryApproved, setRecoveryApproved] = useState(false);
   const [isRecoveryFlow, setIsRecoveryFlow] = useState(false);
 
-  // Auto-load default initial search for instant judge gratification
+  // Auto-load default initial search or resume from Copilot plan
   useEffect(() => {
+    try {
+      const stored = localStorage.getItem('prayanam_copilot_trip');
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (parsed?.constraints) {
+          setConstraints(parsed.constraints);
+          searchRoutes(parsed.constraints);
+          return;
+        }
+      }
+    } catch (_) {}
+
     fetch('/api/parse-trip', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        text: 'Vizag to Hyderabad, reach by 9 AM, prefer sleeper, low budget, with luggage',
+        text: 'Vizag to Hyderabad, reach by 9 AM, prefer sleeper, budget ₹1200, with luggage',
         language: 'en',
       }),
     })
@@ -232,7 +244,11 @@ export default function TravellerPage() {
       const originLocationId = params.originLocationId || (oRes.success && oRes.result?.location?.id) || 'vizag-rtc';
       const destinationLocationId = params.destinationLocationId || (dRes.success && dRes.result?.location?.id) || 'hyd-hitec-city';
 
-      const arrivalDeadline = `${params.departureDate}T23:59:00+05:30`;
+      // For intercity journeys, overnight bus arrivals reach the following morning:
+      const depDate = new Date(params.departureDate);
+      const nextDay = new Date(depDate.getTime() + 24 * 60 * 60 * 1000);
+      const nextDayStr = !isNaN(nextDay.getTime()) ? nextDay.toISOString().split('T')[0] : '2026-10-11';
+      const arrivalDeadline = `${nextDayStr}T14:00:00+05:30`;
 
       const newConstraints: TripConstraints = {
         origin: params.origin,

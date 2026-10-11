@@ -467,7 +467,7 @@ export class DemoConstraintParser implements IConstraintParser {
     if (budgetMatch && parseInt(budgetMatch[1], 10) >= 100) {
       budgetInr = parseInt(budgetMatch[1], 10);
     } else if (cleaned.includes('low budget') || cleaned.includes('తక్కువ బడ్జెట్')) {
-      budgetInr = 1000;
+      budgetInr = 1200;
     } else if (cleaned.includes('high') || cleaned.includes('premium')) {
       budgetInr = 1600;
     }

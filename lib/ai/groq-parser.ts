@@ -40,6 +40,7 @@ Supported Location IDs:
 - Lepakshi: "stop-hindupur-cbs", "stop-lepakshi-temple", "stop-anantapur-cbs", "stop-blr-majestic" (Bengaluru)
 
 Map the user's spoken or typed origin and destination to the closest supported location ID. If origin is omitted, infer the logical connecting terminal (e.g. Tirupati for Tirumala, Vizag for Araku, Vijayawada for Amaravati).
+Budget rules: For Indian intercity corridors (Vizag to Hyderabad, overnight routes), standard bus fares range from ₹880 to ₹1400. If the user mentions "low budget", "cheap", "affordable", or does not state an exact rupee number, ALWAYS set "budgetInr": 1200. Do NOT set budget under 1000 unless the user explicitly wrote an exact small number.
 Return ONLY a valid JSON object matching this schema:
 {
   "origin": string,
@@ -86,10 +87,26 @@ Return ONLY a valid JSON object matching this schema:
       }
 
       const parsed = JSON.parse(content);
+
+      // Protect against overly strict budget filter when user said "low budget" without a number
+      const explicitNumMatch = text.match(/(?:₹|rs\.?|inr|రూ)?\s*(\d{3,5})/i);
+      let parsedBudget = typeof parsed.budgetInr === 'number' ? parsed.budgetInr : 1200;
+      if (!explicitNumMatch && parsedBudget < 1000) {
+        parsedBudget = 1200;
+      }
+
+      // Ensure arrival deadline defaults to next morning for overnight intercity
+      let deadline = parsed.arrivalDeadline;
+      if (!deadline || !deadline.includes('T')) {
+        deadline = '2026-10-11T09:00:00+05:30';
+      }
+
       // Validate schema with Zod
       const validated = TripConstraintsSchema.parse({
         ...parsed,
         departureDate: currentSimulatedDate,
+        arrivalDeadline: deadline,
+        budgetInr: parsedBudget,
         hardConstraints: ['arrivalDeadline', 'budgetInr'],
         softPreferences: ['preferredClass'],
         clarificationNeeded: ['Validated via Groq Llama with deterministic schema bounds.'],
