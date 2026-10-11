@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { WhisperVoiceModal } from '@/components/voice/WhisperVoiceModal';
 import { VoiceAssistantWidget } from '@/components/voice/VoiceAssistantWidget';
+import { LifecycleFlowDiagram } from '@/components/architecture/LifecycleFlowDiagram';
 import { 
   Compass, 
   ShieldCheck, 
@@ -123,38 +124,8 @@ export default function LandingPage() {
           </div>
         </div>
 
-        {/* 5-Pipeline Operating Flow Banner */}
-        <div className="glass-panel p-8 rounded-3xl border border-[#1b2e23] space-y-6">
-          <div className="text-center space-y-2">
-            <h2 className="text-xl font-bold text-white">The Trusted Travel Pipeline</h2>
-            <p className="text-xs text-gray-400">
-              AI parses and explains; deterministic algorithms plan and validate; decisions stay strictly yours.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center">
-            <div className="bg-[#0b120e] p-4 rounded-xl border border-[#182a20] space-y-1">
-              <div className="text-emerald-400 font-mono text-xs font-bold">01. UNDERSTAND</div>
-              <div className="text-[11px] text-gray-300">English / Telugu extraction</div>
-            </div>
-            <div className="bg-[#0b120e] p-4 rounded-xl border border-[#182a20] space-y-1">
-              <div className="text-emerald-400 font-mono text-xs font-bold">02. VALIDATE</div>
-              <div className="text-[11px] text-gray-300">Interactive constraint edits</div>
-            </div>
-            <div className="bg-[#0b120e] p-4 rounded-xl border border-[#182a20] space-y-1">
-              <div className="text-emerald-400 font-mono text-xs font-bold">03. PLAN & COMPARE</div>
-              <div className="text-[11px] text-gray-300">Multi-leg graph search</div>
-            </div>
-            <div className="bg-[#0b120e] p-4 rounded-xl border border-[#182a20] space-y-1">
-              <div className="text-emerald-400 font-mono text-xs font-bold">04. EXPLICIT CONSENT</div>
-              <div className="text-[11px] text-gray-300">Strict booking approval gate</div>
-            </div>
-            <div className="bg-[#0b120e] p-4 rounded-xl border border-[#182a20] space-y-1 col-span-2 sm:col-span-1">
-              <div className="text-emerald-400 font-mono text-xs font-bold">05. RECOVER</div>
-              <div className="text-[11px] text-gray-300">Current-state replanning</div>
-            </div>
-          </div>
-        </div>
+        {/* Complete 7-Step Operating Lifecycle Flow (01 to 07 + Fallback) */}
+        <LifecycleFlowDiagram />
 
         {/* Quick Links to Workbenches */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
