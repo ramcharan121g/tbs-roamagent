@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Atomic Seat Holds & Inventory Control
+// Prayanam - API: Atomic Seat Holds & Inventory Control
 import { NextRequest, NextResponse } from 'next/server';
 import { demoRepo } from '@/lib/repositories/demo-repository';
 

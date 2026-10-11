@@ -1,4 +1,4 @@
-// TBS RoamAgent - Deterministic Demo Parser with Robust Speech Normalization
+// Prayanam - Deterministic Demo Parser with Robust Speech Normalization
 import { IConstraintParser, TripConstraintsSchema } from './parser-interface';
 import { TripConstraints } from '../domain/types';
 

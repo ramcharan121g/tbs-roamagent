@@ -1,4 +1,4 @@
-// TBS RoamAgent - Time Utilities (Explicit Asia/Kolkata)
+// Prayanam - Time Utilities (Explicit Asia/Kolkata)
 
 export const TIMEZONE_OFFSET_STR = '+05:30';
 export const TIMEZONE_OFFSET_MINUTES = 330;

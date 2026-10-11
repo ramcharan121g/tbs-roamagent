@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Disruption Event Simulator & Controller
+// Prayanam - API: Disruption Event Simulator & Controller
 import { NextRequest, NextResponse } from 'next/server';
 import { demoRepo } from '@/lib/repositories/demo-repository';
 import { recalculateRecoveryOptions } from '@/lib/domain/recovery';
@@ -121,7 +121,7 @@ export async function POST(req: NextRequest) {
         demoRepo.addNotification({
           recipient: 'traveller',
           title: 'Missed Boarding Alert',
-          message: 'Your bus departed terminal. RoamAgent Smart Reboarding has identified the next scheduled service with confirmed spare seat.',
+          message: 'Your bus departed terminal. Prayanam Smart Reboarding has identified the next scheduled service with confirmed spare seat.',
           type: 'alert',
         });
 

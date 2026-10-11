@@ -1,4 +1,4 @@
-# RoamAgent Interaction Rules: Complete Agent Reaction & Response Contract
+# Prayanam Interaction Rules: Complete Agent Reaction & Response Contract
 
 Refer to [docs/AGENT_REACTION_CONTRACT.md](file:///c:/Users/ramch/vignan%20hackthon%20sol/docs/AGENT_REACTION_CONTRACT.md) for full contract specification.
 

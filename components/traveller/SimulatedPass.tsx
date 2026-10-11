@@ -40,7 +40,7 @@ export function SimulatedPass({ booking, onSimulateDisruption }: SimulatedPassPr
         <div className="flex items-center justify-between border-b border-[#182a20] pb-4">
           <div>
             <span className="text-[10px] text-gray-400 uppercase tracking-widest font-mono">
-              RoamAgent Digital Boarding Pass
+              Prayanam Digital Boarding Pass
             </span>
             <div className="text-lg font-bold text-white flex items-center gap-2">
               <span>{busLeg?.operatorName}</span>

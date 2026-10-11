@@ -1,4 +1,4 @@
-// TBS RoamAgent - Andhra Pradesh 6 Tourist Destinations Bus Network Dataset
+// Prayanam - Andhra Pradesh 6 Tourist Destinations Bus Network Dataset
 // Covers: Tirupati & Tirumala, Vizag & Araku, Vijayawada & Amaravati,
 // Gandikota & Belum Caves, Rajahmundry & Maredumilli, and Lepakshi.
 

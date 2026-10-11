@@ -1,4 +1,4 @@
-// TBS RoamAgent - Optional Groq Llama Parser with Safe Fallback to Deterministic Demo Parser
+// Prayanam - Optional Groq Llama Parser with Safe Fallback to Deterministic Demo Parser
 import { IConstraintParser, TripConstraintsSchema } from './parser-interface';
 import { DemoConstraintParser } from './demo-parser';
 import { TripConstraints } from '../domain/types';
@@ -25,7 +25,7 @@ export class GroqConstraintParser implements IConstraintParser {
     }
 
     try {
-      const prompt = `You are TBS RoamAgent extraction engine for Indian intercity travel and tourist corridors across Andhra Pradesh, Telangana, and South India.
+      const prompt = `You are Prayanam extraction engine for Indian intercity travel and tourist corridors across Andhra Pradesh, Telangana, and South India.
 Extract structured travel constraints from this user query: "${text}".
 Language hint: "${languageHint}".
 

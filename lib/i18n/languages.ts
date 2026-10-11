@@ -1,4 +1,4 @@
-// TBS RoamAgent - All 22 Scheduled Official Languages of India + English
+// Prayanam - All 22 Scheduled Official Languages of India + English
 // Conforms to the 8th Schedule of the Constitution of India
 
 export interface LanguageInfo {
@@ -52,9 +52,9 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
     speechCode: 'en-IN',
     region: 'Pan-India',
     samplePrompt: 'Vizag to Hyderabad, reach by 9 AM, prefer sleeper, low budget, with luggage',
-    welcomeSpeech: 'Hello! I am RoamAgent, your voice travel concierge. Where would you like to travel today?',
+    welcomeSpeech: 'Hello! I am Prayanam, your voice travel concierge. Where would you like to travel today?',
     ui: {
-      appTitle: 'TBS RoamAgent',
+      appTitle: 'Prayanam',
       appSubtitle: 'Travel planned. Disruptions handled. Decisions stay yours.',
       navTraveller: 'Traveller Workbench',
       navOperator: 'Operator Workbench',
@@ -64,7 +64,7 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
       startVoice: 'Speak Now',
       stopVoice: 'Stop Listening',
       listening: 'Listening to your voice...',
-      speaking: 'RoamAgent speaking...',
+      speaking: 'Prayanam speaking...',
       replayVoice: 'Replay Response',
       manualBooking: 'Manual Direct Booking',
       planJourney: 'Plan Your Intercity Journey',
@@ -94,9 +94,9 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
     speechCode: 'te-IN',
     region: 'South',
     samplePrompt: 'వైజాగ్ నుండి హైదరాబాద్, ఉదయం 9 గంటలకు చేరాలి, స్లీపర్ బస్సు, తక్కువ బడ్జెట్',
-    welcomeSpeech: 'నమస్కారం! నేను రోమ్‌ఏజెంట్ మీ వాయిస్ ప్రయాణ సహాయకుడిని. మీరు ఎక్కడికి ప్రయాణించాలనుకుంటున్నారు?',
+    welcomeSpeech: 'నమస్కారం! నేను ప్రయాణం మీ వాయిస్ ప్రయాణ సహాయకుడిని. మీరు ఎక్కడికి ప్రయాణించాలనుకుంటున్నారు?',
     ui: {
-      appTitle: 'టీబీఎస్ రోమ్‌ఏజెంట్',
+      appTitle: 'ప్రయాణం',
       appSubtitle: 'ప్రయాణ ప్రణాళిక. అంతరాయాల పరిష్కారం. నిర్ణయాలు మీవే.',
       navTraveller: 'ప్రయాణికుల వేదిక',
       navOperator: 'ఆపరేటర్ వేదిక',
@@ -106,7 +106,7 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
       startVoice: 'మాట్లాడండి',
       stopVoice: 'ఆపండి',
       listening: 'మీ మాటలను వింటున్నాము...',
-      speaking: 'రోమ్‌ఏజెంట్ సమాధానం చెబుతోంది...',
+      speaking: 'ప్రయాణం సమాధానం చెబుతోంది...',
       replayVoice: 'మళ్లీ వినండి',
       manualBooking: 'నేరుగా టికెట్ బుకింగ్',
       planJourney: 'మీ ప్రయాణాన్ని ప్లాన్ చేసుకోండి',
@@ -682,9 +682,9 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
     speechCode: 'sat-IN',
     region: 'East',
     samplePrompt: 'Vizag khon Hyderabad, setah 9 baje, bus te',
-    welcomeSpeech: 'Johar! In do RoamAgent kanañ, apnar reyan ror tayom goro. Okare senah sanayem kana?',
+    welcomeSpeech: 'Johar! In do Prayanam kanañ, apnar reyan ror tayom goro. Okare senah sanayem kana?',
     ui: {
-      appTitle: 'TBS RoamAgent',
+      appTitle: 'Prayanam',
       appSubtitle: 'Daran porikolpona. Eto banchao.',
       navTraveller: 'Yatri Dashboard',
       navOperator: 'Operator Dashboard',
@@ -852,7 +852,7 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
     samplePrompt: 'Vizag to Hyderabad, subuh 9 baje, sleeper bus',
     welcomeSpeech: 'نمسكار! مان روم ايجنٽ آهيان، توهان جو آواز سفر مددگار. توهان ڪٿي وڃڻ چاهيو ٿا؟',
     ui: {
-      appTitle: 'TBS RoamAgent',
+      appTitle: 'Prayanam',
       appSubtitle: 'سفر جي رٿابندي. فيصلا توهان جا.',
       navTraveller: 'مسافر ورڪ بينچ',
       navOperator: 'آپريٽر ورڪ بينچ',
@@ -934,9 +934,9 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
     speechCode: 'mni-IN',
     region: 'Northeast',
     samplePrompt: 'Vizag to Hyderabad, ayuk 9 baje, sleeper bus',
-    welcomeSpeech: 'Khurumjari! Eina RoamAgent ni, nahakki khonjelgi lambi mateng pangba. Kadaida chatningbano?',
+    welcomeSpeech: 'Khurumjari! Eina Prayanam ni, nahakki khonjelgi lambi mateng pangba. Kadaida chatningbano?',
     ui: {
-      appTitle: 'TBS RoamAgent',
+      appTitle: 'Prayanam',
       appSubtitle: 'Chatpagi thourang. Warep nahakki.',
       navTraveller: 'Chatliba Mee Dashboard',
       navOperator: 'Operator Dashboard',
@@ -976,9 +976,9 @@ export const INDIAN_LANGUAGES: LanguageInfo[] = [
     speechCode: 'brx-IN',
     region: 'Northeast',
     samplePrompt: 'Vizag nifrai Hyderabad, fungsini 9 baje, sleeper bus',
-    welcomeSpeech: 'Khulumbai! Ang RoamAgent, nin khwranijwng dami goro. Nwi bobao thangan?',
+    welcomeSpeech: 'Khulumbai! Ang Prayanam, nin khwranijwng dami goro. Nwi bobao thangan?',
     ui: {
-      appTitle: 'TBS RoamAgent',
+      appTitle: 'Prayanam',
       appSubtitle: 'Thangnai porikolpona. Nin thik.',
       navTraveller: 'Thangnai Dashboard',
       navOperator: 'Operator Dashboard',

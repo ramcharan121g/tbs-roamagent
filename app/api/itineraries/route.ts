@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Multi-Leg Itinerary Planning & Ranking
+// Prayanam - API: Multi-Leg Itinerary Planning & Ranking
 import { NextRequest, NextResponse } from 'next/server';
 import { searchItineraries } from '@/lib/domain/route-search';
 import { generateResiliencePassport, buildDecisionEvidence } from '@/lib/domain/recovery';

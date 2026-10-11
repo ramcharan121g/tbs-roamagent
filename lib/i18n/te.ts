@@ -1,8 +1,8 @@
-// TBS RoamAgent - Telugu Translations (తెలుగు అనువాదాలు)
+// Prayanam - Telugu Translations (తెలుగు అనువాదాలు)
 import { Translations } from './en';
 
 export const teTranslations: Translations = {
-  appTitle: 'TBS రోమ్‌ఏజెంట్ (RoamAgent)',
+  appTitle: 'ప్రయాణం (Prayanam)',
   appSubtitle: 'ప్రయాణ ప్రణాళిక. ఆటంకాల పరిష్కారం. నిర్ణయాధికారం మీదే.',
   demoPill: 'డెమో మోడ్ · సిమ్యులేటెడ్ డేటా',
   navTraveller: 'ప్రయాణికుల వర్క్‌బెంచ్',

@@ -39,9 +39,9 @@ import { formatTimeOnly } from '@/lib/domain/time';
 
 const INITIAL_AGENT_REACTION: AgentReactionState = {
   reactionId: 'Reaction 1',
-  title: 'Welcome to TBS RoamAgent',
+  title: 'Welcome to Prayanam',
   message:
-    'Welcome to TBS RoamAgent.\nTell me where you want to travel, when you need to arrive, and what matters most to you.\nI\'ll compare feasible journeys, explain the trade-offs, and help you recover if your plans change.\nYou remain in control of every booking and journey change.',
+    'Welcome to Prayanam.\nTell me where you want to travel, when you need to arrive, and what matters most to you.\nI\'ll compare feasible journeys, explain the trade-offs, and help you recover if your plans change.\nYou remain in control of every booking and journey change.',
   whatHappensNext:
     'Type your destination in the AI concierge prompt below, or click "Manual Direct Booking" to reserve verified schedules directly from the Andhra Pradesh transport network.',
   currentStep: 'Respond',
@@ -277,7 +277,7 @@ export default function TravellerPage() {
       title: 'Simulated Booking Confirmed & Monitored',
       message: `Your simulated booking has been confirmed.\nPassenger: ${b.passengerName} (Pass ID: ${b.boardingPassId || b.id})\nService: ${b.itinerary.legs[0].operatorName} (Fare: ₹${b.totalFareInr})\nThis is a demonstration booking with transactional capacity protection.`,
       whatHappensNext:
-        'RoamAgent has placed your journey under active disruption monitoring. If delays occur on the corridor, the Journey Rescue Network will automatically notify you with verified alternatives.',
+        'Prayanam has placed your journey under active disruption monitoring. If delays occur on the corridor, the Journey Rescue Network will automatically notify you with verified alternatives.',
       currentStep: 'Respond',
       statusType: 'success',
     });
@@ -397,7 +397,7 @@ export default function TravellerPage() {
           </div>
         </div>
 
-        {/* RoamAgent Active Reaction & Explanation Feed */}
+        {/* Prayanam Active Reaction & Explanation Feed */}
         <AgentReactionFeed
           reaction={agentReaction}
           onOpenManualBooking={() => setShowManualBooking(true)}

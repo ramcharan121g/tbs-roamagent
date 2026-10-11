@@ -61,7 +61,7 @@ export function AgentReactionFeed({
               </span>
             </div>
             <span className="text-[11px] text-gray-400 font-mono">
-              RoamAgent Contract: Deterministic Verification Active
+              Prayanam Contract: Deterministic Verification Active
             </span>
           </div>
         </div>

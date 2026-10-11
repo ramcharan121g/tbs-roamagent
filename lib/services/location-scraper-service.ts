@@ -1,4 +1,4 @@
-// TBS RoamAgent - Location Intelligence & Web Scraper Service
+// Prayanam - Location Intelligence & Web Scraper Service
 // Implements ₹0-budget live OpenStreetMap Nominatim scraping + Deterministic Offline AP Geographical Fallback
 import { Location, TransportService, ScrapedLocationResult } from '../domain/types';
 import { DemoRepository } from '../repositories/demo-repository';
@@ -433,7 +433,7 @@ export class LocationScraperService {
 
     const res = await fetch(url, {
       headers: {
-        'User-Agent': 'TBS-RoamAgent-Scraper/1.0 (hackathon-prototype; contact: support@tbsroam.in)',
+        'User-Agent': 'Prayanam-Scraper/1.0 (hackathon-prototype; contact: support@prayanam.in)',
         Accept: 'application/json',
       },
       signal: controller.signal,

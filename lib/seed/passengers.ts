@@ -1,4 +1,4 @@
-// TBS RoamAgent - 12 Synthetic Passenger Profiles for Mass Recovery Benchmark
+// Prayanam - 12 Synthetic Passenger Profiles for Mass Recovery Benchmark
 import { TripConstraints } from '../domain/types';
 
 export interface SyntheticPassenger {

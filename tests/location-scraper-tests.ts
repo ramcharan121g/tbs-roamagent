@@ -1,4 +1,4 @@
-// TBS RoamAgent - Location Intelligence & Web Scraper Automated Test Suite
+// Prayanam - Location Intelligence & Web Scraper Automated Test Suite
 import { locationScraper, calculateHaversineDistanceKm } from '../lib/services/location-scraper-service';
 import { DemoConstraintParser } from '../lib/ai/demo-parser';
 import { searchItineraries } from '../lib/domain/route-search';
@@ -32,7 +32,7 @@ async function runScenario(id: string, name: string, fn: () => Promise<string> |
 
 async function main() {
   console.log('================================================================');
-  console.log('TBS RoamAgent - Location Intelligence & Scraper Verification');
+  console.log('Prayanam - Location Intelligence & Scraper Verification');
   console.log('================================================================\n');
 
   const repo = DemoRepository.getInstance();

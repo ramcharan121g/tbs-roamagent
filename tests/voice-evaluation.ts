@@ -1,4 +1,4 @@
-// TBS RoamAgent - Multilingual Whisper Voice AI Accuracy Evaluation Test Suite
+// Prayanam - Multilingual Whisper Voice AI Accuracy Evaluation Test Suite
 // Evaluates 30 real test cases across English, Telugu, and English-Telugu code-switching,
 // plus silence, noise, and edge cases. Measures WER/CER, language identification, and travel intent accuracy.
 
@@ -295,7 +295,7 @@ function computeWordDistance(ref: string, hyp: string): number {
 
 async function runEvaluation() {
   console.log('================================================================');
-  console.log('TBS RoamAgent - Multilingual Whisper Speech AI Evaluation Suite');
+  console.log('Prayanam - Multilingual Whisper Speech AI Evaluation Suite');
   console.log('================================================================\n');
 
   const voiceService = VoiceTranscriptionService.getInstance();

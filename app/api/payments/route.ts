@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Simulated Payment Gateway (Hackathon Prototype)
+// Prayanam - API: Simulated Payment Gateway (Hackathon Prototype)
 import { NextRequest, NextResponse } from 'next/server';
 import { demoRepo } from '@/lib/repositories/demo-repository';
 import { SimulatedPaymentRecord, SimulatedPaymentStatus, SimulatedPaymentMethod } from '@/lib/domain/types';

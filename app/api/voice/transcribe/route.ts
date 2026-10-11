@@ -1,4 +1,4 @@
-// TBS RoamAgent - API Endpoint: Multilingual Voice Transcription (Whisper-Style Pipeline)
+// Prayanam - API Endpoint: Multilingual Voice Transcription (Whisper-Style Pipeline)
 import { NextRequest, NextResponse } from 'next/server';
 import { VoiceTranscriptionService } from '@/lib/services/voice-transcription-service';
 

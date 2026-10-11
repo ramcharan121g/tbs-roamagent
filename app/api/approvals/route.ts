@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Human Booking Approval Gate
+// Prayanam - API: Human Booking Approval Gate
 import { NextRequest, NextResponse } from 'next/server';
 import { demoRepo } from '@/lib/repositories/demo-repository';
 import { HumanBookingApproval } from '@/lib/domain/types';

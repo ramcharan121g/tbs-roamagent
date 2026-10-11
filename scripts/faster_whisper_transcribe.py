@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TBS RoamAgent - Local Faster-Whisper Speech Recognition Bridge
+Prayanam - Local Faster-Whisper Speech Recognition Bridge
 Executes zero-cost multilingual transcription using Faster-Whisper Small model.
 Outputs standard JSON with detected_language, probability, and segments.
 """

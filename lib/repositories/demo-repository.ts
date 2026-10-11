@@ -1,4 +1,4 @@
-// TBS RoamAgent - Central In-Memory Demo Repository & Atomic Inventory Controller
+// Prayanam - Central In-Memory Demo Repository & Atomic Inventory Controller
 import {
   AuditEvent,
   Booking,

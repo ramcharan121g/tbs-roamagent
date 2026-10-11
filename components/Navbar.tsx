@@ -42,7 +42,7 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
   const handleLanguageToggle = (newLang: string) => {
     setLang(newLang);
     if (onLangChange) onLangChange(newLang);
-    localStorage.setItem('roamagent_lang', newLang);
+    localStorage.setItem('prayanam_lang', newLang);
     setShowLangModal(false);
   };
 
@@ -74,7 +74,7 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
   }, []);
 
   useEffect(() => {
-    const saved = localStorage.getItem('roamagent_lang') as 'en' | 'te';
+    const saved = localStorage.getItem('prayanam_lang') as 'en' | 'te';
     if (saved) {
       setLang(saved);
       if (onLangChange) onLangChange(saved);
@@ -115,7 +115,7 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
               </div>
               <div>
                 <span className="font-bold text-lg tracking-tight text-white flex items-center gap-1.5">
-                  TBS RoamAgent
+                  Prayanam
                   <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">
                     Agentic AI
                   </span>
@@ -284,7 +284,7 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
             </div>
 
             <p className="text-xs text-gray-300">
-              India is a multilingual nation. RoamAgent provides two-way voice assistance and interface translation across all 22 official scheduled languages.
+              India is a multilingual nation. Prayanam provides two-way voice assistance and interface translation across all 22 official scheduled languages.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-2 max-h-[60vh] overflow-y-auto pr-1">

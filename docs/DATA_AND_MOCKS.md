@@ -1,7 +1,7 @@
-# TBS RoamAgent — Data Sources, Mocks & Simulation Disclaimers
+# Prayanam — Data Sources, Mocks & Simulation Disclaimers
 
 ## 1. Transparency & Simulation Contract
-TBS RoamAgent strictly follows the integrity guidelines of the Samartha Hackathon:
+Prayanam strictly follows the integrity guidelines of the Samartha Hackathon:
 > **Never fabricate live schedules, availability, fares, GPS positions, or booking authority if they do not exist.**
 
 All schedules, seat availability numbers, GPS status updates, disruption events, and boarding passes in this demonstration are explicitly labelled:

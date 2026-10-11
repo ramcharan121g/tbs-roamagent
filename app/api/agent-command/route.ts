@@ -1,4 +1,4 @@
-// TBS RoamAgent - Full-Prototype Agentic Voice & Chatbot Controller
+// Prayanam - Full-Prototype Agentic Voice & Chatbot Controller
 // Powered by Groq: openai/gpt-oss-20b with smart deterministic action execution
 import { NextRequest, NextResponse } from 'next/server';
 import { DemoConstraintParser } from '@/lib/ai/demo-parser';
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
       message.toLowerCase().includes('తెలుగు');
 
     // System prompt instructing openai/gpt-oss-20b to act as the master travel concierge & prototype controller
-    const systemPrompt = `You are TBS RoamAgent Omnipresent AI Travel Concierge and Prototype Controller.
+    const systemPrompt = `You are Prayanam Omnipresent AI Travel Concierge and Prototype Controller.
 You control EVERY INCH of the prototype: trip intake, constraint validation, multi-leg planning, Resilience Passport, booking confirmation, disruption simulation (90-min delay, bus cancellation, missed boarding, 12-passenger mass rescue), operator fleet dispatch, and RecoveryBench.
 
 Current Page: ${currentPath}
@@ -93,8 +93,8 @@ Rules:
       let disruptionType = null;
       let targetPath = null;
       let replyText = isTelugu
-        ? 'నమస్కారం! నేను TBS రోమ్‌ఏజెంట్. ప్రయాణ ప్రణాళిక, ఆటంకాల పరిష్కారం లేదా ఆపరేటర్ వివరాల కోసం నన్ను అడగండి.'
-        : 'Hello! I am TBS RoamAgent. I can plan your journeys, inject highway disruptions, coordinate operator rescue, or run benchmarks.';
+        ? 'నమస్కారం! నేను TBS ప్రయాణం. ప్రయాణ ప్రణాళిక, ఆటంకాల పరిష్కారం లేదా ఆపరేటర్ వివరాల కోసం నన్ను అడగండి.'
+        : 'Hello! I am Prayanam. I can plan your journeys, inject highway disruptions, coordinate operator rescue, or run benchmarks.';
 
       if (lower.includes('delay') || lower.includes('ఆలస్యం') || lower.includes('90')) {
         actionType = 'TRIGGER_DISRUPTION';

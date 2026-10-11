@@ -1,7 +1,7 @@
-// TBS RoamAgent - English Dictionary
+// Prayanam - English Dictionary
 
 export const enTranslations = {
-  appTitle: 'TBS RoamAgent',
+  appTitle: 'Prayanam',
   appSubtitle: 'Travel planned. Disruptions handled. Decisions stay yours.',
   demoPill: 'DEMO MODE · SIMULATED DATA',
   navTraveller: 'Traveller Workbench',

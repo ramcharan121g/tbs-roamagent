@@ -1,4 +1,4 @@
-// TBS RoamAgent - Deterministic Multi-Leg Itinerary Engine
+// Prayanam - Deterministic Multi-Leg Itinerary Engine
 import {
   Itinerary,
   ItineraryLeg,

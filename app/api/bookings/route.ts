@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Booking & Consent Gate
+// Prayanam - API: Booking & Consent Gate
 import { NextRequest, NextResponse } from 'next/server';
 import { demoRepo } from '@/lib/repositories/demo-repository';
 import { Itinerary } from '@/lib/domain/types';

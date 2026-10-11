@@ -1,4 +1,4 @@
-# TBS RoamAgent — 5-Minute Hackathon Demo Script for Judges
+# Prayanam — 5-Minute Hackathon Demo Script for Judges
 
 ## Step 1: Conversational Intake & Validated Constraints (1 Minute)
 1. Open `http://localhost:3000/traveller`.

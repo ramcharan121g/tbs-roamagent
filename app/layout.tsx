@@ -3,7 +3,7 @@ import './globals.css';
 import { OmniVoiceAgent } from '@/components/OmniVoiceAgent';
 
 export const metadata: Metadata = {
-  title: 'TBS RoamAgent — Agentic AI Travel Concierge',
+  title: 'Prayanam — Agentic AI Travel Concierge',
   description:
     'Agentic AI Travel Concierge for Indian intercity travel. Multi-leg itinerary planning, transparent resilience heuristics, and coordinated disruption recovery.',
 };

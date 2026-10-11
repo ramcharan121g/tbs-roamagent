@@ -1,4 +1,4 @@
-// TBS RoamAgent - Resilience Passport & Decision Evidence Engine
+// Prayanam - Resilience Passport & Decision Evidence Engine
 import {
   DecisionEvidence,
   DisruptionEvent,

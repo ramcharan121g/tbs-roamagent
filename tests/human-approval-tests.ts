@@ -1,4 +1,4 @@
-// TBS RoamAgent - Human Approval & Simulated Payment Acceptance Test Suite
+// Prayanam - Human Approval & Simulated Payment Acceptance Test Suite
 // Verifies all 12 mandatory criteria defined in the feature specification.
 
 import { DemoRepository } from '../lib/repositories/demo-repository';
@@ -33,7 +33,7 @@ async function runScenario(id: string, name: string, fn: () => Promise<string> |
 
 async function main() {
   console.log('================================================================');
-  console.log('TBS RoamAgent - Human Approval & Payment Acceptance Verification');
+  console.log('Prayanam - Human Approval & Payment Acceptance Verification');
   console.log('================================================================\n');
 
   const repo = DemoRepository.getInstance();

@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Instant Location Intelligence & Scraper Search (<10ms Fast Index)
+// Prayanam - API: Instant Location Intelligence & Scraper Search (<10ms Fast Index)
 import { NextRequest, NextResponse } from 'next/server';
 import { locationScraper } from '@/lib/services/location-scraper-service';
 import { searchFastAPStations } from '@/lib/seed/ap-comprehensive-stations';

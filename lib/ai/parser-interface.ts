@@ -1,4 +1,4 @@
-// TBS RoamAgent - Trip Constraints Parser Interface & Zod Schema
+// Prayanam - Trip Constraints Parser Interface & Zod Schema
 import { z } from 'zod';
 import { TripConstraints } from '../domain/types';
 

@@ -535,7 +535,7 @@ export function VoiceAssistantModal({
                   )}
                 </div>
                 <span className="text-[10px] text-gray-500 font-mono mt-1 px-1">
-                  {isUser ? 'You' : 'RoamAgent'} · {msg.timestamp}
+                  {isUser ? 'You' : 'Prayanam'} · {msg.timestamp}
                 </span>
               </div>
             );

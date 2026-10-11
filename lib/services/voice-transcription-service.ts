@@ -1,4 +1,4 @@
-// TBS RoamAgent - Multilingual Whisper-Style Speech Recognition Service
+// Prayanam - Multilingual Whisper-Style Speech Recognition Service
 // Zero-cost, privacy-preserving audio transcription pipeline.
 
 import fs from 'fs';
@@ -94,7 +94,7 @@ export class VoiceTranscriptionService {
     }
 
     // Create temporary file for audio processing
-    const tempDir = path.join(os.tmpdir(), 'roamagent-voice');
+    const tempDir = path.join(os.tmpdir(), 'prayanam-voice');
     if (!fs.existsSync(tempDir)) {
       fs.mkdirSync(tempDir, { recursive: true });
     }

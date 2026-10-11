@@ -1,4 +1,4 @@
--- TBS RoamAgent - Supabase Initial Schema & Transactional Seat Allocation
+-- Prayanam - Supabase Initial Schema & Transactional Seat Allocation
 -- Migration: 001_initial_schema.sql
 
 -- 1. Locations

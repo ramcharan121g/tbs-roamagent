@@ -1,4 +1,4 @@
--- TBS RoamAgent - Migration 002: Andhra Pradesh 6 Tourist Destinations Bus Network
+-- Prayanam - Migration 002: Andhra Pradesh 6 Tourist Destinations Bus Network
 -- 5 Linked Tables: bus_services, bus_stops, service_stop_times, bus_fares, connections
 
 -- Table 1: bus_services

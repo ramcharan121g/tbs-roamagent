@@ -1,4 +1,4 @@
-// TBS RoamAgent - Comprehensive Pre-Indexed Andhra Pradesh & Connecting Transit Network
+// Prayanam - Comprehensive Pre-Indexed Andhra Pradesh & Connecting Transit Network
 // Covers 110+ stations across all 26 districts of AP + key intercity transit terminals
 import { Location } from '../domain/types';
 

@@ -1,4 +1,4 @@
-// TBS RoamAgent - RecoveryBench Automated Scenario Test Suite
+// Prayanam - RecoveryBench Automated Scenario Test Suite
 import { DemoConstraintParser } from '../lib/ai/demo-parser';
 import { searchItineraries } from '../lib/domain/route-search';
 import { generateResiliencePassport, buildDecisionEvidence } from '../lib/domain/recovery';
@@ -34,7 +34,7 @@ async function runScenario(id: string, name: string, fn: () => Promise<string> |
 
 async function main() {
   console.log('================================================================');
-  console.log('TBS RoamAgent - Running RecoveryBench Automated Verification');
+  console.log('Prayanam - Running RecoveryBench Automated Verification');
   console.log('================================================================\n');
 
   const repo = DemoRepository.getInstance();

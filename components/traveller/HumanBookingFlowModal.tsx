@@ -363,7 +363,7 @@ export function HumanBookingFlowModal({
                 {/* Simulated Cancellation Policy */}
                 <div className="text-[11px] text-gray-400 bg-[#0c1611] p-3 rounded-xl border border-[#1b2e23] space-y-1">
                   <strong className="text-gray-300 block">Simulated Refund & Cancellation Policy:</strong>
-                  <p>100% simulated refund if cancelled at least 2 hours before scheduled departure. Re-accommodation supported via RoamAgent Journey Rescue Network.</p>
+                  <p>100% simulated refund if cancelled at least 2 hours before scheduled departure. Re-accommodation supported via Prayanam Journey Rescue Network.</p>
                 </div>
               </div>
 
@@ -676,7 +676,7 @@ export function HumanBookingFlowModal({
                   <CheckCircle2 className="w-7 h-7" />
                 </div>
                 <h4 className="font-bold text-white text-base pt-2">
-                  Your booking is confirmed in the RoamAgent simulation!
+                  Your booking is confirmed in the Prayanam simulation!
                 </h4>
                 <p className="text-xs text-gray-400 font-mono">
                   Your itinerary and simulated boarding pass are ready.

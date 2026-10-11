@@ -1,4 +1,4 @@
-# TBS RoamAgent — RecoveryBench Testing & Invariant Verification
+# Prayanam — RecoveryBench Testing & Invariant Verification
 
 ## 1. Running Automated Tests
 Run the deterministic test suite from the repository root:

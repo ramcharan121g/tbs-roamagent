@@ -1,8 +1,8 @@
-# TBS RoamAgent — Technical Architecture & System Design
+# Prayanam — Technical Architecture & System Design
 
 ## 1. System Mission & Operating Philosophy
 
-**TBS RoamAgent** is an agentic AI travel concierge and disruption-recovery workbench for Indian intercity journeys (centered on Visakhapatnam ↔ Hyderabad corridor).
+**Prayanam** is an agentic AI travel concierge and disruption-recovery workbench for Indian intercity journeys (centered on Visakhapatnam ↔ Hyderabad corridor).
 
 ### Core Principle: Strict Separation of AI and Deterministic Planning
 ```

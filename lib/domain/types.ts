@@ -1,4 +1,4 @@
-// TBS RoamAgent - Core Domain Types and Data Contracts
+// Prayanam - Core Domain Types and Data Contracts
 
 export type TransportMode = 'bus' | 'cab' | 'auto' | 'metro';
 export type SeatClass = 'sleeper' | 'seater' | 'semi-sleeper' | 'any';

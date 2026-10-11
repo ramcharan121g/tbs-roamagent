@@ -43,7 +43,7 @@ export default function LandingPage() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
-            TBS RoamAgent
+            Prayanam
           </h1>
           <p className="text-xl sm:text-2xl font-medium text-emerald-400">
             Travel planned. Disruptions handled. Decisions stay yours.
@@ -81,7 +81,7 @@ export default function LandingPage() {
             <div className="w-12 h-12 rounded-xl bg-emerald-950 text-emerald-400 border border-emerald-800 flex items-center justify-center">
               <Shield className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-bold text-white">RoamAgent Resilience Passport</h3>
+            <h3 className="text-lg font-bold text-white">Prayanam Resilience Passport</h3>
             <p className="text-xs text-gray-400 leading-relaxed">
               Before booking, inspect your itinerary’s disruption tolerance. Validates highway delays,
               transfer buffer slack, and identified backup services using honest heuristics rather than
@@ -200,7 +200,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-[#1b2e23] py-6 text-center text-xs text-gray-500 font-mono">
-        <div>TBS RoamAgent · Samartha Hackathon Prototype</div>
+        <div>Prayanam · Samartha Hackathon Prototype</div>
         <div className="text-[11px] text-gray-600 mt-1">
           Simulated transport timetables, inventory, and boarding passes. Not connected to real financial credentials.
         </div>

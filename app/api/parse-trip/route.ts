@@ -1,4 +1,4 @@
-// TBS RoamAgent - API: Trip Constraint Parsing & Extraction
+// Prayanam - API: Trip Constraint Parsing & Extraction
 import { NextRequest, NextResponse } from 'next/server';
 import { GroqConstraintParser } from '@/lib/ai/groq-parser';
 

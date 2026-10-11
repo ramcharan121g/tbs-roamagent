@@ -1,4 +1,4 @@
-// TBS RoamAgent - Seed Locations (Visakhapatnam & Hyderabad Corridor)
+// Prayanam - Seed Locations (Visakhapatnam & Hyderabad Corridor)
 import { Location } from '../domain/types';
 
 export const SEED_LOCATIONS: Location[] = [

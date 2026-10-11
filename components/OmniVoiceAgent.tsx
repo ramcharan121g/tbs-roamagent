@@ -37,7 +37,7 @@ export function OmniVoiceAgent() {
     {
       id: 'msg-0',
       sender: 'agent',
-      text: 'Hello! I am your RoamAgent AI Concierge (powered by openai/gpt-oss-20b). Speak or type to control any part of the prototype: plan routes, inject delays, coordinate operator rescue, or run benchmarks.',
+      text: 'Hello! I am your Prayanam AI Concierge (powered by openai/gpt-oss-20b). Speak or type to control any part of the prototype: plan routes, inject delays, coordinate operator rescue, or run benchmarks.',
       timestamp: '18:00',
     },
   ]);
@@ -160,7 +160,7 @@ export function OmniVoiceAgent() {
             router.push('/traveller');
           } else {
             // Trigger quick reload of data
-            window.dispatchEvent(new Event('roamagent_disruption_updated'));
+            window.dispatchEvent(new Event('prayanam_disruption_updated'));
           }
         } else if (action?.type === 'RUN_BENCH') {
           executedTag = 'Opening RecoveryBench Suite';
@@ -214,7 +214,7 @@ export function OmniVoiceAgent() {
             <Bot className="w-4 h-4 text-white" />
             <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-lime-400 animate-ping" />
           </div>
-          <span>RoamAgent AI Copilot</span>
+          <span>Prayanam AI Copilot</span>
           <span className="text-[10px] bg-emerald-950 px-1.5 py-0.5 rounded border border-emerald-700 font-mono">
             gpt-oss-20b
           </span>
@@ -235,7 +235,7 @@ export function OmniVoiceAgent() {
               </div>
               <div>
                 <h3 className="font-bold text-sm text-white flex items-center gap-1.5">
-                  RoamAgent Copilot
+                  Prayanam Copilot
                   <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">
                     Active
                   </span>

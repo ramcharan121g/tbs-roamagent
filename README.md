@@ -1,4 +1,4 @@
-# TBS RoamAgent — Agentic AI Travel Concierge
+# Prayanam — Agentic AI Travel Concierge
 
 > **Samartha Hackathon: Agentic AI in Travel Technology**  
 > *Theme: "Where Indian Ingenuity Meets AI" — Vignan's Institute of Information Technology*  
@@ -8,11 +8,11 @@
 
 ## 🌟 Overview & Product Mission
 
-**TBS RoamAgent** is an agentic AI travel concierge and disruption-recovery workbench designed for Indian intercity travel, centered on the **Visakhapatnam (Vizag) ↔ Hyderabad** transport corridor.
+**Prayanam** is an agentic AI travel concierge and disruption-recovery workbench designed for Indian intercity travel, centered on the **Visakhapatnam (Vizag) ↔ Hyderabad** transport corridor.
 
 Conventional travel apps force users to manually search individual bus routes, coordinate separate cabs, guess transfer buffers, and frantically search for new tickets when a bus is delayed or cancelled. 
 
-RoamAgent replaces this fragmented process with an end-to-end agentic workflow:
+Prayanam replaces this fragmented process with an end-to-end agentic workflow:
 ```
 Understand ➔ Validate ➔ Plan ➔ Compare ➔ Confirm ➔ Monitor ➔ Recover ➔ Coordinate
 ```
@@ -21,7 +21,7 @@ Understand ➔ Validate ➔ Plan ➔ Compare ➔ Confirm ➔ Monitor ➔ Recover
 
 ## 🚀 Key Differentiators Built
 
-1. **RoamAgent Resilience Passport**: Before booking, inspect your itinerary's disruption tolerance. Validates 4 simulated highway scenarios (90-minute delay, service cancellation, missed boarding, cab unavailability) and displays honest heuristics rather than fabricated predictions.
+1. **Prayanam Resilience Passport**: Before booking, inspect your itinerary's disruption tolerance. Validates 4 simulated highway scenarios (90-minute delay, service cancellation, missed boarding, cab unavailability) and displays honest heuristics rather than fabricated predictions.
 2. **Journey Rescue Network**: When a service is disrupted, coordinates recovery between affected travellers and transport operators (APSRTC, TSRTC, Orange Travels, Morning Star, Kaveri). Uses transactional seat holds to prevent double-booking and requires operator acceptance plus traveller approval.
 3. **12-Passenger Mass Rescue Benchmark**: Demonstrates an assignment optimizer matching 12 travellers with diverse deadlines, budgets, and accessibility needs against scarce replacement fleet capacity (11 available seats). Transparently reports the 1 unresolved case with zero double-booking.
 4. **AI-Powered Missed-Bus Recovery & Smart Reboarding**: Detects absent boarding records after terminal departure, finds future viable departures from the traveller's current location, places a seat hold, and issues an updated simulated boarding pass.
@@ -76,7 +76,7 @@ npm test
 **Measured Output:**
 ```
 ================================================================
-TBS RoamAgent - Running RecoveryBench Automated Verification
+Prayanam - Running RecoveryBench Automated Verification
 ================================================================
 
 [PASS] TC-01: Simple Feasible Route Search (3ms) - Found 2 feasible routes. Best fare ₹980, arrival buffer 105m.

@@ -1,4 +1,4 @@
-# TBS ROAMAGENT — COMPLETE AGENT REACTION & RESPONSE CONTRACT
+# PRAYANAM — COMPLETE AGENT REACTION & RESPONSE CONTRACT
 
 ## Purpose
 The agent must respond intelligently to traveller messages, changes to travel requirements, itinerary results, booking decisions, disruptions, operator decisions, inventory conflicts, and AI failures.
@@ -15,12 +15,12 @@ Do not implement these as a collection of hardcoded chatbot replies. Connect eac
 
 # PART 1 — GENERAL AGENT BEHAVIOUR
 
-## Reaction 1: Traveller opens RoamAgent
+## Reaction 1: Traveller opens Prayanam
 **Context:** The traveller opens the application for the first time.
 **Expected behaviour:**
 The application explains its purpose, shows the available actions, and makes the demo-data status visible.
 **Agent response:**
-"Welcome to TBS RoamAgent.
+"Welcome to Prayanam.
 Tell me where you want to travel, when you need to arrive, and what matters most to you.
 I'll compare feasible journeys, explain the trade-offs, and help you recover if your plans change.
 You remain in control of every booking and journey change."

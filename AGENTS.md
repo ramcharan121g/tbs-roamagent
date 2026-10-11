@@ -8,7 +8,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# TBS ROAMAGENT — COMPLETE AGENT REACTION & RESPONSE CONTRACT
+# PRAYANAM — COMPLETE AGENT REACTION & RESPONSE CONTRACT
 
 ## Purpose
 The agent must respond intelligently to traveller messages, changes to travel requirements, itinerary results, booking decisions, disruptions, operator decisions, inventory conflicts, and AI failures.
