@@ -14,8 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark h-full">
-      <body className="min-h-full flex flex-col bg-[#080c0a] text-gray-100 antialiased">
+    <html lang="en" className="dark h-full" suppressHydrationWarning>
+      <body
+        className="min-h-full flex flex-col bg-[#080c0a] text-gray-100 antialiased"
+        suppressHydrationWarning
+      >
         {children}
         <OmniVoiceAgent />
       </body>
