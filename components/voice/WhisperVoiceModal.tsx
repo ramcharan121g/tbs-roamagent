@@ -316,7 +316,7 @@ export function WhisperVoiceModal({
             </div>
             <div>
               <div className="flex items-center space-x-2">
-                <h3 className="font-bold text-white text-base">RoamVoice AI</h3>
+                <h3 className="font-bold text-white text-base">Prayanam Voice AI</h3>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800">
                   Whisper Pipeline (₹0 AI Budget)
                 </span>

@@ -19,7 +19,9 @@ import {
 import { enTranslations } from '@/lib/i18n/en';
 import { teTranslations } from '@/lib/i18n/te';
 import { INDIAN_LANGUAGES, getLanguageByCode } from '@/lib/i18n/languages';
-import { Mic, Globe } from 'lucide-react';
+import { Mic, Globe, User, LogIn } from 'lucide-react';
+import { useAuth } from '@/lib/auth/auth-context';
+import { AuthModal } from '@/components/auth/AuthModal';
 
 interface NavbarProps {
   currentLang?: string;
@@ -29,6 +31,7 @@ interface NavbarProps {
 
 export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant }: NavbarProps) {
   const pathname = usePathname();
+  const { user, isAuthenticated, openAuthModal, closeAuthModal, isAuthModalOpen } = useAuth();
   const [lang, setLang] = useState<string>(currentLang);
   const [clock, setClock] = useState<string>('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -186,6 +189,34 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
               <span className="text-[10px] text-gray-400">({activeLang.code.toUpperCase()})</span>
             </button>
 
+            {/* User Profile / Sign In Button */}
+            {user ? (
+              <button
+                onClick={openAuthModal}
+                className="flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-[#0f1713] border border-emerald-600/50 hover:border-emerald-400 text-white text-xs font-medium transition-all shadow-[0_0_10px_rgba(16,185,129,0.15)] group"
+                title={`Signed in as ${user.name} (${user.phone})`}
+              >
+                <div className="w-5 h-5 rounded-full bg-emerald-700 text-white font-bold text-[10px] flex items-center justify-center border border-emerald-400/60">
+                  {user.avatarInitials}
+                </div>
+                <span className="hidden sm:inline font-medium text-gray-200 group-hover:text-white">
+                  {user.name.split(' ')[0]}
+                </span>
+                <span className="text-[9px] font-mono px-1 py-0.2 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">
+                  ID
+                </span>
+              </button>
+            ) : (
+              <button
+                onClick={openAuthModal}
+                className="flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-emerald-950/80 border border-emerald-600/70 text-emerald-300 text-xs font-medium hover:bg-emerald-900 transition-all shadow-[0_0_10px_rgba(16,185,129,0.15)]"
+                title="Sign in to manage bookings"
+              >
+                <User className="w-3.5 h-3.5 text-emerald-400" />
+                <span>{t.navSignIn || 'Sign In'}</span>
+              </button>
+            )}
+
             {/* Reset Button */}
             <button
               onClick={() => setShowResetConfirm(true)}
@@ -231,6 +262,43 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
                 </Link>
               );
             })}
+
+            {/* Mobile Sign In / Profile */}
+            <div className="pt-2 border-t border-[#1b2e23]">
+              {user ? (
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openAuthModal();
+                  }}
+                  className="w-full px-3 py-2 rounded-lg bg-[#0f1713] border border-emerald-600/50 text-left flex items-center justify-between"
+                >
+                  <div className="flex items-center space-x-2.5">
+                    <div className="w-7 h-7 rounded-full bg-emerald-700 text-white font-bold text-xs flex items-center justify-center">
+                      {user.avatarInitials}
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-white">{user.name}</div>
+                      <div className="text-[10px] text-gray-400 font-mono">{user.phone}</div>
+                    </div>
+                  </div>
+                  <span className="text-[10px] bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded border border-emerald-800">
+                    Switch / Sign Out
+                  </span>
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openAuthModal();
+                  }}
+                  className="w-full px-3 py-2 rounded-lg bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center space-x-2"
+                >
+                  <User className="w-4 h-4" />
+                  <span>{t.navSignIn || 'Sign In'}</span>
+                </button>
+              )}
+            </div>
           </div>
         )}
       </header>
@@ -320,6 +388,9 @@ export function Navbar({ currentLang = 'en', onLangChange, onOpenVoiceAssistant 
           </div>
         </div>
       )}
+
+      {/* User Sign In & Profile Management Modal */}
+      <AuthModal isOpen={isAuthModalOpen} onClose={closeAuthModal} lang={lang} />
     </>
   );
 }

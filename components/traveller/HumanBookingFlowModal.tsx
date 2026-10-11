@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { Itinerary, Booking, HumanBookingApproval, SimulatedPaymentMethod } from '@/lib/domain/types';
 import { formatTimeOnly, formatDuration } from '@/lib/domain/time';
+import { useAuth } from '@/lib/auth/auth-context';
 
 export type BookingStage = 
   | 'review' 
@@ -55,9 +56,10 @@ export function HumanBookingFlowModal({
   isRecovery = false,
   recoveryFareDifference,
 }: HumanBookingFlowModalProps) {
+  const { user } = useAuth();
   const [stage, setStage] = useState<BookingStage>('review');
   const [passengerCount, setPassengerCount] = useState(initialPassengerCount);
-  const [name, setName] = useState(passengerName);
+  const [name, setName] = useState(user?.name || passengerName);
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
@@ -71,13 +73,13 @@ export function HumanBookingFlowModal({
     if (isOpen) {
       setStage('review');
       setPassengerCount(initialPassengerCount);
-      setName(passengerName);
+      setName(user?.name || passengerName);
       setApproval(null);
       setConfirmedBooking(null);
       setErrorMsg(null);
       setPaymentTxnId(null);
     }
-  }, [isOpen, itinerary, initialPassengerCount, passengerName]);
+  }, [isOpen, itinerary, initialPassengerCount, passengerName, user]);
 
   if (!isOpen || !itinerary) return null;
 

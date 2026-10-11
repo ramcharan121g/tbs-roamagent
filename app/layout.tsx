@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { OmniVoiceAgent } from '@/components/OmniVoiceAgent';
+import { AuthProvider } from '@/lib/auth/auth-context';
 
 export const metadata: Metadata = {
   title: 'Prayanam — Agentic AI Travel Concierge',
@@ -19,8 +20,10 @@ export default function RootLayout({
         className="min-h-full flex flex-col bg-[#080c0a] text-gray-100 antialiased"
         suppressHydrationWarning
       >
-        {children}
-        <OmniVoiceAgent />
+        <AuthProvider>
+          {children}
+          <OmniVoiceAgent />
+        </AuthProvider>
       </body>
     </html>
   );

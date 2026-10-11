@@ -10,6 +10,7 @@ export const teTranslations: Translations = {
   navSimulator: 'డిస్రప్షన్ సిమ్యులేటర్',
   navBench: 'రికవరీ బెంచ్',
   navClearData: 'డేటా క్లియర్ చేయండి',
+  navSignIn: 'సైన్ ఇన్ (లాగిన్)',
 
   // Traveller Intake
   intakeHeading: 'మీ అంతర్-నగర ప్రయాణాన్ని ప్లాన్ చేసుకోండి',

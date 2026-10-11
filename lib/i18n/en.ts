@@ -9,6 +9,7 @@ export const enTranslations = {
   navSimulator: 'Disruption Simulator',
   navBench: 'RecoveryBench',
   navClearData: 'Clear Demo Data',
+  navSignIn: 'Sign In',
 
   // Traveller Intake
   intakeHeading: 'Plan Your Intercity Journey',
